@@ -1,4 +1,6 @@
 <<<<<<< HEAD
+##技术栈
+vue2+vuex+ajax+less+mui+html5+webpack
 ## 运行程序
 通过`npm`安装本地服务第三方依赖模块
 ```
