@@ -1,0 +1,29 @@
+.popuo-login{
+	background: url(../images/pop.png) no-repeat;
+	width: 80%;
+	height: 85%;
+	background-size: cover;
+	border: none;
+}
+.layui-m-layerchild h3 {
+    padding: 0 10px !important;
+    height: 1rem !important;
+    line-height: 1rem !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    border-radius: 5px 5px 0 0 !important;
+    text-align: center !important;
+}
+.layui-m-layercont iframe{
+	width: 98% ;
+	height: 100%;
+	border: none;
+	margin-left: 1%;
+}
+.layui-m-layer1 .layui-m-layercont {
+
+    height: 85%;
+}
+.layui-m-layerchild{
+	background-color: transparent !important;
+}

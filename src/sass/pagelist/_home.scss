@@ -1,0 +1,185 @@
+.mui-row>div {
+    color: #025da6;
+}
+.gradient {
+    background: -webkit-radial-gradient(#fff, #39f) !important;
+    @include wh(100%, 100%);
+    @include allcover;
+    z-index: 0;
+}
+
+.blur {
+    filter: blur(50px);
+}
+.top-bg{
+   background-image: url(../images/top_bar_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+.user-info {
+    .head {
+        img {
+            @include borderRadius(3px);
+            @include bc(#564b51);
+        }
+    }
+    .account-center {
+        @include bis('../images/account-icon.png');
+        display: block;
+        @include wh(3rem, 1.2rem);
+    }
+}
+
+.mui-card-footer:before,
+.mui-card-header:after {
+    background-color: transparent;
+}
+
+.mui-row {
+    background: #c0d3e4;
+}
+
+.tip {
+    @include wh(15rem, 1.5rem);
+    @include borderRadius(23px);
+    overflow: hidden;
+    line-height: 1.5rem;
+    background: rgba(198, 217, 234, 0.5);
+    margin-left: 3rem;
+    margin-top: 0.8rem;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    text-indent: 1.5rem;
+    .icon{
+         @include bis('../images/tip-icon.png');
+         @include wh(1rem, 1.3rem);
+         position: absolute;
+    }
+    p {
+        color: #005199;
+    }
+}
+
+.recharge {
+    @include bis('../images/price-icon.png');
+    @include wh(7rem, 2rem);
+    font-size: 0.8rem;
+    color: #fff;
+    line-height: 2.1rem;
+    padding-left: 2.0rem;
+    img{
+        @include img(2.5rem,2rem);
+       
+    }
+    
+}
+.none{
+    .mui-active{
+        background-color: transparent !important;
+    }
+}
+.content {
+    margin-bottom: 1rem;
+    .left {
+        padding: 0.5rem 0 0rem 0;
+        background: rgba(198, 217, 234, 0.6);
+        width: 50%;
+        margin: auto;
+        @include borderRadius(4rem);
+        font-size: 1rem;
+        margin-top: 1rem;
+        .txt {
+            padding-bottom: 0.5rem;
+            font-size: 0.8rem;
+        }
+        .item {
+            margin: auto;
+            text-align: center;
+            &:nth-child(1) {
+                margin-top: 0.2rem;
+                .icon {
+                    @include bis('../images/left-menu-icon1.png');
+                    @include wh(2rem, 2rem);
+                    margin: auto;
+                }
+            }
+            &:nth-child(2) {
+                .icon {
+                    @include bis('../images/left-menu-icon2.png');
+                    @include wh(2rem, 2rem);
+                    margin: auto;
+                }
+            }
+            &:nth-child(3) {
+                .icon {
+                    @include bis('../images/left-menu-icon3.png');
+                    @include wh(2rem, 2rem);
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .middle {
+        margin-left: 2rem;
+        .ball-list {
+            background: transparent;
+            &:nth-child(1) {
+                margin-bottom: 0.5rem;
+            }
+            .list {
+                img {
+                    @include img(5rem, 5rem);
+                    display: block;
+                    margin: auto;
+                }
+                .tc {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+    .more {
+        position: absolute;
+        right: 0;
+        width: 2rem;
+        height: 9rem;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+        background: rgba(198, 217, 234, 0.5);
+        padding: 1rem 0;
+        .index_more{
+             @include bis('../images/index_more.png');
+             @include wh(1.5rem, 1.5rem);
+             margin: auto;
+        }
+        .tc{
+            padding-top: 0.5rem;
+        }
+        .mui-icon {
+            margin: 1rem 0 0 0.3rem;
+        }
+        img {
+            @include img(3rem, 3rem);
+        }
+    }
+}
+
+.bottom {
+    margin-left: 6rem;
+    .bottom-list {
+        .list {
+            display: flex;
+            img {
+                @include img(2rem, 2rem);
+            }
+            p {
+                color: #fff;
+                margin: auto 0.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,586 @@
+@charset "UTF-8";
+.mui-row,
+.mui-content {
+  background: transparent !important; }
+
+li {
+  list-style-type: none; }
+
+[v-cloak] {
+  display: none; }
+
+.tc {
+  text-align: center; }
+
+.white {
+  color: #fff !important; }
+
+.theme_bg {
+  background: url(../images/theme_bg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat; }
+
+/*内阴影+圆角*/
+/*边框颜色*/
+.theme_bg {
+  background: url(../images/theme_bg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat; }
+
+.container {
+  display: flex; }
+  .container .mui-content {
+    margin: auto;
+    width: 60%; }
+  .container .logo {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 1rem auto; }
+  .container .user-icon {
+    background-image: url("../images/user-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1rem;
+    height: 1rem; }
+  .container .username,
+  .container .password {
+    position: relative; }
+  .container .username input,
+  .container .password input {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    background-color: #c5dbf2;
+    border: none;
+    padding-left: 3rem;
+    font-size: 0.8rem; }
+  .container .icon {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    position: absolute;
+    margin-top: 0.6rem;
+    margin-left: 1rem; }
+  .container .user-icon {
+    background-image: url("../images/user-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+  .container .pass-icon {
+    background-image: url("../images/password-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+  .container .login-btn {
+    background-image: url("../images/login-btn2.png");
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 2.5rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    color: #993b00;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2.5rem; }
+  .container .back-pass {
+    float: right;
+    line-height: 2rem;
+    text-decoration: underline;
+    color: #6b675e;
+    font-size: 1rem; }
+  .container .delete {
+    background-image: url("../images/delete-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: 4%;
+    top: 21%; }
+
+.mui-row > div {
+  color: #025da6; }
+
+.gradient {
+  background: -webkit-radial-gradient(#fff, #39f) !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0; }
+
+.blur {
+  filter: blur(50px); }
+
+.top-bg {
+  background-image: url(../images/top_bar_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.user-info .head img {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #564b51; }
+.user-info .account-center {
+  background-image: url("../images/account-icon.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  width: 3rem;
+  height: 1.2rem; }
+
+.mui-card-footer:before,
+.mui-card-header:after {
+  background-color: transparent; }
+
+.mui-row {
+  background: #c0d3e4; }
+
+.tip {
+  width: 15rem;
+  height: 1.5rem;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  -ms-border-radius: 23px;
+  -o-border-radius: 23px;
+  border-radius: 23px;
+  overflow: hidden;
+  line-height: 1.5rem;
+  background: rgba(198, 217, 234, 0.5);
+  margin-left: 3rem;
+  margin-top: 0.8rem;
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+  text-indent: 1.5rem; }
+  .tip .icon {
+    background-image: url("../images/tip-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1rem;
+    height: 1.3rem;
+    position: absolute; }
+  .tip p {
+    color: #005199; }
+
+.recharge {
+  background-image: url("../images/price-icon.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 7rem;
+  height: 2rem;
+  font-size: 0.8rem;
+  color: #fff;
+  line-height: 2.1rem;
+  padding-left: 2.0rem; }
+  .recharge img {
+    width: 100%;
+    height: 100%;
+    max-width: 2.5rem;
+    max-height: 2rem; }
+
+.none .mui-active {
+  background-color: transparent !important; }
+
+.content {
+  margin-bottom: 1rem; }
+  .content .left {
+    padding: 0.5rem 0 0rem 0;
+    background: rgba(198, 217, 234, 0.6);
+    width: 50%;
+    margin: auto;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+    border-radius: 4rem;
+    font-size: 1rem;
+    margin-top: 1rem; }
+    .content .left .txt {
+      padding-bottom: 0.5rem;
+      font-size: 0.8rem; }
+    .content .left .item {
+      margin: auto;
+      text-align: center; }
+      .content .left .item:nth-child(1) {
+        margin-top: 0.2rem; }
+        .content .left .item:nth-child(1) .icon {
+          background-image: url("../images/left-menu-icon1.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          width: 2rem;
+          height: 2rem;
+          margin: auto; }
+      .content .left .item:nth-child(2) .icon {
+        background-image: url("../images/left-menu-icon2.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 2rem;
+        height: 2rem;
+        margin: auto; }
+      .content .left .item:nth-child(3) .icon {
+        background-image: url("../images/left-menu-icon3.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 2rem;
+        height: 2rem;
+        margin: auto; }
+  .content .middle {
+    margin-left: 2rem; }
+    .content .middle .ball-list {
+      background: transparent; }
+      .content .middle .ball-list:nth-child(1) {
+        margin-bottom: 0.5rem; }
+      .content .middle .ball-list .list img {
+        width: 100%;
+        height: 100%;
+        max-width: 5rem;
+        max-height: 5rem;
+        display: block;
+        margin: auto; }
+      .content .middle .ball-list .list .tc {
+        font-size: 0.7rem; }
+  .content .more {
+    position: absolute;
+    right: 0;
+    width: 2rem;
+    height: 9rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    background: rgba(198, 217, 234, 0.5);
+    padding: 1rem 0; }
+    .content .more .index_more {
+      background-image: url("../images/index_more.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin: auto; }
+    .content .more .tc {
+      padding-top: 0.5rem; }
+    .content .more .mui-icon {
+      margin: 1rem 0 0 0.3rem; }
+    .content .more img {
+      width: 100%;
+      height: 100%;
+      max-width: 3rem;
+      max-height: 3rem; }
+
+.bottom {
+  margin-left: 6rem; }
+  .bottom .bottom-list .list {
+    display: flex; }
+    .bottom .bottom-list .list img {
+      width: 100%;
+      height: 100%;
+      max-width: 2rem;
+      max-height: 2rem; }
+    .bottom .bottom-list .list p {
+      color: #fff;
+      margin: auto 0.5rem; }
+
+.account .top {
+  height: 2rem;
+  background: #4194c3; }
+  .account .top .tc {
+    color: #fff;
+    line-height: 2rem; }
+.account .account-content .left {
+  font-size: 0.8rem;
+  border-right: 1px solid #e0e6ef; }
+  .account .account-content .left .bl {
+    border-left: 2px solid #3a84c3;
+    padding-left: 0.8rem; }
+  .account .account-content .left .icon {
+    width: 100%;
+    height: 100%;
+    max-width: 1.5rem;
+    max-height: 1.5rem; }
+  .account .account-content .left .mui-navigate-right {
+    display: flex; }
+    .account .account-content .left .mui-navigate-right .mui-media-body {
+      margin: auto 0; }
+  .account .account-content .left li.active {
+    background: #e4eaf4; }
+.account .account-content .right .list {
+  position: absolute;
+  left: 0;
+  top: 2rem;
+  width: 100%;
+  height: 100%; }
+  .account .account-content .right .list .table-view:before {
+    background-color: transparent; }
+  .account .account-content .right .list .table-view img {
+    width: 100%;
+    height: 100%;
+    max-width: 5rem;
+    max-height: 5rem;
+    margin-top: 4rem; }
+
+.table-view {
+  background-color: #eff5ff; }
+  .table-view.none-list .tc {
+    color: #76797e;
+    padding-right: 0.8rem;
+    padding-top: 1rem; }
+  .table-view.none-list img {
+    margin: auto;
+    display: block; }
+  .table-view.none-list:after {
+    background-color: transparent; }
+
+.table-view-cell:after {
+  left: 0;
+  background-color: #e0e6ef; }
+
+.mui-table-view-cell:last-child:after {
+  background-color: transparent; }
+
+.show {
+  display: block; }
+
+.mui-icon-back:before,
+.mui-icon-left-nav:before {
+  color: #fff; }
+
+.red {
+  color: red; }
+
+.order-bg {
+  background: url(../images/main_bg.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  color: #1159a8; }
+  .order-bg .top {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top: 0; }
+    .order-bg .top .mui-action-back {
+      width: 1.5rem;
+      height: 1.5rem;
+      background-image: url("../images/back_normal.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin: 0.5rem;
+      display: block; }
+    .order-bg .top .logo {
+      width: 4rem;
+      height: 2rem;
+      float: left; }
+      .order-bg .top .logo img {
+        width: 100%;
+        height: 100%;
+        max-width: 7rem;
+        max-height: 3rem; }
+    .order-bg .top .recharge {
+      width: 6rem;
+      height: 1.8rem;
+      background-image: url("../images/price-icon.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      float: right;
+      position: absolute;
+      right: 3.5rem;
+      top: 0.3rem; }
+    .order-bg .top .server {
+      background-image: url("../images/kefu.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      right: 0.8rem;
+      top: 1rem; }
+  .order-bg .content {
+    width: 100%;
+    height: 100%;
+    max-width: 82.5%;
+    max-height: 76%;
+    background-image: url(../images/betting_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin-left: 8%;
+    top: 11%; }
+    .order-bg .content .nList {
+      border-bottom: 1px solid #fff;
+      line-height: 3rem;
+      font-weight: bold;
+      height: 3rem;
+      width: 98%;
+      margin-left: 1%; }
+      .order-bg .content .nList .title {
+        font-size: 0.8rem;
+        height: 2rem;
+        width: 1rem;
+        line-height: 1rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        margin-right: 1.2rem; }
+      .order-bg .content .nList .ballList {
+        background: url(../images/betting_number_nor.png) no-repeat;
+        background-size: contain;
+        text-align: center;
+        transform: scale(0.8);
+        line-height: 2rem;
+        margin-top: 0; }
+        .order-bg .content .nList .ballList span {
+          width: 3rem;
+          height: 3rem;
+          display: block;
+          line-height: 3rem;
+          text-align: center; }
+        .order-bg .content .nList .ballList.selected {
+          background: url(../images/betting_number_press.png) no-repeat;
+          background-size: contain; }
+      .order-bg .content .nList .order-type {
+        line-height: 1rem;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        float: right;
+        margin-right: 1.5rem;
+        overflow: hidden;
+        width: auto; }
+        .order-bg .content .nList .order-type .box {
+          display: flex; }
+          .order-bg .content .nList .order-type .box span {
+            font-size: 0.8rem;
+            width: 1rem;
+            padding: 3px; }
+      .order-bg .content .nList .lt-pick-row {
+        height: 3rem;
+        margin: auto;
+        width: 6rem; }
+        .order-bg .content .nList .lt-pick-row li {
+          float: left;
+          width: 1rem;
+          height: 1rem;
+          font-size: 0.8rem; }
+  .order-bg .right {
+    position: absolute;
+    right: 0;
+    top: 2.5rem; }
+    .order-bg .right ul li {
+      margin-top: 0.5rem;
+      width: 3rem;
+      text-align: center; }
+      .order-bg .right ul li span {
+        padding-top: 0.2rem;
+        display: block;
+        font-size: 0.8rem; }
+      .order-bg .right ul li .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: auto; }
+      .order-bg .right ul li:nth-child(1) .icon {
+        background-image: url("../images/trend_press.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%; }
+      .order-bg .right ul li:nth-child(2) .icon {
+        background-image: url("../images/recording_press.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%; }
+      .order-bg .right ul li:nth-child(3) .icon {
+        background-image: url("../images/dollar_press.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%; }
+      .order-bg .right ul li:nth-child(4) .icon {
+        background-image: url("../images/collection_list.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%; }
+      .order-bg .right ul li:nth-child(2) .icon {
+        background-image: url("../images/recording_press.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%; }
+  .order-bg .left {
+    background: rgba(223, 235, 247, 0.5);
+    width: 5.2%;
+    height: auto;
+    padding: 0.5rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+    top: 22%;
+    left: 4%;
+    position: absolute; }
+    .order-bg .left .icon {
+      background-image: url("../images/model_down.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 1rem;
+      height: 1rem;
+      margin-bottom: 1rem; }
+  .order-bg .order-bottom {
+    margin-top: 50%;
+    margin-left: 8%;
+    line-height: 2rem;
+    height: 2rem;
+    overflow: hidden; }
+    .order-bg .order-bottom .unit {
+      background-image: url("../images/model_dd.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 4rem;
+      height: 2rem;
+      padding-left: 0.6rem; }
+    .order-bg .order-bottom .num {
+      background-image: url("../images/main_my_recharge.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 8rem;
+      height: 2rem;
+      text-align: center;
+      display: flex;
+      margin-left: 0.5rem; }
+      .order-bg .order-bottom .num .reduce, .order-bg .order-bottom .num .add {
+        flex: 1; }
+      .order-bg .order-bottom .num .bg {
+        flex: 2; }
+      .order-bg .order-bottom .num .reduce {
+        background-image: url("../images/less.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 2rem;
+        height: 2rem; }
+      .order-bg .order-bottom .num .add {
+        background-image: url("../images/add.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 2rem;
+        height: 2rem; }
+    .order-bg .order-bottom .all {
+      font-size: 0.8rem;
+      padding-left: 2rem; }
+    .order-bg .order-bottom .zhuihao {
+      background-image: url("../images/plan_btn_onpress.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 5rem;
+      height: 2rem; }
+  .order-bg .pop {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80%; }
+
+/*# sourceMappingURL=mindex.css.map */

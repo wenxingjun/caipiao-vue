@@ -1,0 +1,71 @@
+            .theme_bg {
+                background: url(../images/theme_bg.jpg);
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+            }
+            
+            .container {
+                display: flex;
+                .mui-content {
+                    margin: auto;
+                    width: 60%;
+                }
+                .logo {
+                    @include bis('../images/logo.png');
+                    @include wh(3.5rem, 3.5rem);
+                    margin: 1rem auto;
+                }
+                .user-icon {
+                    @include bis('../images/user-icon.png');
+                    @include wh(1rem, 1rem);
+                }
+                .username,
+                .password {
+                    position: relative;
+                }
+                .username input,
+                .password input {
+                    @include brs(20px, 3px, #c5dbf2);
+                    border: none;
+                    padding-left: 3rem;
+                    font-size: 0.8rem;
+                }
+                .icon {
+                    @include wh(1rem, 1rem);
+                    display: block;
+                    position: absolute;
+                    margin-top: 0.6rem;
+                    margin-left: 1rem;
+                }
+                .user-icon {
+                    @include bis('../images/user-icon.png');
+                }
+                .pass-icon {
+                    @include bis('../images/password-icon.png');
+                }
+                .login-btn {
+                    @include bisx('../images/login-btn2.png');
+                    @include wh(100%, 2.5rem);
+                    @include borderRadius(2rem);
+                    @include sc(1rem, #993b00);
+                    text-align: center;
+                    font-weight: bold;
+                    line-height: 2.5rem;
+                }
+                .back-pass {
+                    float: right;
+                    line-height: 2rem;
+                    text-decoration: underline;
+                    color: #6b675e;
+                    font-size: 1rem;
+                }
+                .delete {
+                    @include bis('../images/delete-icon.png');
+                    @include wh(1rem, 1rem);
+                    position: absolute;
+                    right: 4%;
+                    top: 21%;
+                }
+            }
