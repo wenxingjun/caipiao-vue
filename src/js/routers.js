@@ -5,7 +5,7 @@ export default {
 	routes: [{
 		path: '/', //首页
 		name: "home",
-        meta: { title: "首页" },
+		meta: { title: "首页" },
 		component: require('../views/home.vue') //resolve => require(['../views/home.vue'], resolve)
 	},{
 		path: '/users/user-center', //用户中心
@@ -23,10 +23,10 @@ export default {
 		meta: { title: "消息详情" },
 		component: require('../views/users/message-details.vue')
 	},{
-		path: '/users/user-info', //个人资料
-		name: "userInfo",
+		path: '/users/user-set', //用户设置
+		name: "userSet",
 		meta: { title: "个人资料" },
-		component: require('../views/users/user-info.vue')
+		component: require('../views/users/user-set.vue')
 	},{
 		path: '/users/reset-password', //个人资料
 		name: "resetPassword",
@@ -45,10 +45,9 @@ export default {
 	},{
 		path: '/customerGather/customer-balls',
 		name: "customerBalls",
-		meta: {title: "" },
+		meta: {title: "投注" },
 		component: require('../views/customerGather/customer-balls.vue')
-	},
-		{
+	}, {
 		path: '/users/welcome', //登录
 		name: "welcome",
 		meta: {auth: false, title: "启动欢迎" },
@@ -56,19 +55,19 @@ export default {
 	},{
 		path: '*', //未发现该页面
 		name: "notFound",
-		meta: {auth: false, title: "未发现该页面" },
+		meta: {auth: false, title: "未发现该页面"},
 		component: require('../views/error/404.vue')
 	}],
 
 	scrollBehavior(to, from, savedPosition) {
 		if (savedPosition) {
-	    	return savedPosition;
-	  	} else {
-	    	return { x: 0, y: 0 };
-	  	}
-	  	if (to.hash) {
-    		return { selector: to.hash};
-  		}
+			return savedPosition;
+		} else {
+			return { x: 0, y: 0 };
+		}
+		if (to.hash) {
+			return { selector: to.hash};
+		}
 	},
 
 	//创建路由
