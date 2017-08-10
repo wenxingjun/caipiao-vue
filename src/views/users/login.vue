@@ -1,6 +1,6 @@
 <template>
 	<div class="container bottom_fix" id="bottomx">
-		<div class="mui-content" style="#efefef">
+		<div class="mui-content">
 			<div class="mui-row">
 				<div class="logo"></div>
 			</div>
@@ -18,57 +18,57 @@
 	</div>
 </template>
 <script>
-export default {
-	data() {
-		return {
-			tenancyName: null,
-			password: null,
-			focusName: null
-		}
-	},
-	methods: {
-		sumbit(e){
-			var _this = this;
-			if(!_this.tenancyName){
-				_this.focusName = "tenancyName";
-				app.mui.toast('请输入账号');
-				return;
+	export default {
+		data() {
+			return {
+				tenancyName: null,
+				password: null,
+				focusName: null
 			}
-			if(!_this.password){
-				_this.focusName = "password";
-				app.mui.toast('请输入密码');
-				return;
-			}
-			app.mui(e.target).button('loading');
-			app.api.user.login({
-				data: {
-					tenancyName: _this.tenancyName,
-					password: _this.password
-				},
-				success(data){
-					app.globalService.setUserInfo({
-						tenancyName: _this.tenancyName
-					});
-					_this.go();
-				},
-				complete(){
-					app.mui(e.target).button('reset');
-				}
-			});
 		},
+		methods: {
+			sumbit(e){
+				var _this = this;
+				if(!_this.tenancyName){
+					_this.focusName = "tenancyName";
+					app.mui.toast('请输入账号');
+					return;
+				}
+				if(!_this.password){
+					_this.focusName = "password";
+					app.mui.toast('请输入密码');
+					return;
+				}
+				app.mui(e.target).button('loading');
+				app.api.user.login({
+					data: {
+						tenancyName: _this.tenancyName,
+						password: _this.password
+					},
+					success(data){
+						app.globalService.setUserInfo({
+							tenancyName: _this.tenancyName,
+							token: data.token,
+							expiredTime: data.expiredTime
+						});
+						_this.go();
+					},
+					complete(){
+						app.mui(e.target).button('reset');
+					}
+				});
+			},
 
-		go: function(){
-//			const [_this, _toName, _current_query] = [this, this.$route.query.toName, this.$route.query];
-//			if(_toName){
-//				delete _current_query.toName;
-//				this.$router.push({name: _toName, query: _current_query});
-//			} else {
-//				this.$router.push({name: "home"});
-//			}
-
-			this.$router.push({name: "home"});
+			go: function(){
+				const [_this, _toName, _current_query] = [this, this.$route.query.toName, this.$route.query];
+				if(_toName){
+					delete _current_query.toName;
+					this.$router.push({name: _toName, query: _current_query});
+				} else {
+					this.$router.push({name: "home"});
+				}
+			}
 		}
 	}
-}
 </script>
 
